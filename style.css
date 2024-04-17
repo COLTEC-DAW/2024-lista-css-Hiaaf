@@ -1,7 +1,7 @@
 :root {
   --font-color: #F2EDE4;
   --background-color: #262526;
-  --highlight-color: #F2E205;
+  --highlight-color: #F2785C;
 }
 
 
@@ -37,6 +37,10 @@ p {
 
 abbr {
   font-family: small-caps;
+}
+
+strong, em, a, abbr {
+  color: var(--highlight-color);
 }
 
 .summary {
