@@ -1,36 +1,58 @@
 :root {
-  --font-color: #F2EDE4;
   --background-color: #262526;
-  --highlight-color: #c5958b;
+  --font-color: #f5f5f5;
+  --highlight-color: #e7583b;
 }
 
 
-* {
-  background-color: var(--background-color);
-  color: var(--font-color);
-
-  font-family: sans-serif;
-}
 
 body {
-  width: 50%;
+  background-color: var(--background-color);
+  color: var(--font-color);
+  
+  font-family: sans-serif;
+  
+  
+  width: 80%;
+  max-width: 1280px;
+  
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  display: inline-block;
+  position: relative;
+  /* Move the element to the right by 50% of the container's width */
+  left: 50%; 
+  /* Calculates 50% of the element's width, and moves it by that */ 
+  /* amount across the X-axis to the left */
+  transform: translateX(-50%);
 }
 
 h1 {
   font-size: 1.8rem;
-  color: #f7a998;
+  color: #da4220;
   text-align: center;
+
+  padding-left: 1em;
+  padding-right: 1em;
+
+  display: inline-block;
 }
 
 h2 {
   font-size: 1.4rem;
-  color: #e68c77;
+  color: #fd6340;
   text-align: center;
+
+  display: inline-block;
+
 }
 
 h3 {
   font-size: 1.2rem;
-  color: #e68c77;
+  color: #fd6340;
   text-align: center;
 }
 
@@ -44,6 +66,15 @@ abbr {
 
 strong, em, a, abbr {
   color: var(--highlight-color);
+  padding: .5em;
+}
+
+footer {
+  margin-top: 4%;
+}
+
+footer a {
+  border: 2px solid;
 }
 
 .summary {
@@ -52,4 +83,23 @@ strong, em, a, abbr {
 
 .main p {
   line-height: 1.5;
+}
+
+.intro {
+  height: 550px;
+}
+
+.sidebar li {
+  padding-bottom: 1em;
+  text-align: center;
+}
+
+.sidebar ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+#design-archives {
+  display: none;
 }
