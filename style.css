@@ -69,6 +69,32 @@ strong, em, a, abbr {
   padding: .5em;
 }
 
+a {
+  font-weight: bold;
+}
+
+a:hover {
+  color: #ad2d13;
+}
+
+a:visited {
+  font-weight: none;
+}
+
+.explanation p:first-of-type::first-letter {
+  font-size: 3em;
+  font-family: serif;
+  float: left;
+}
+
+.design-selection li {
+  border-top: 1px dotted #b00b69;
+}
+
+.design-selection li:last-child {
+  border-bottom: 1px dotted #b00b69;
+}
+
 footer {
   margin-top: 4%;
 }
