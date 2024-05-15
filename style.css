@@ -97,10 +97,14 @@ a:visited {
 
 footer {
   margin-top: 4%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 footer a {
   border: 2px solid;
+  margin: 1%;
 }
 
 .summary {
@@ -142,4 +146,33 @@ footer a {
   top: 560px;
   left: 62%;
   padding: 0% 2%;
+}
+
+.benefits {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid lavender;
+}
+
+.benefits h3 {
+  flex: 30%;
+  order: 1;
+}
+
+.benefits p {
+  flex: 70%;
+}
+
+.participation {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 2px solid lavender;
+}
+
+.participation h3 {
+  align-self: center;
+}
+
+.participation * {
+  flex-basis: 50%;
 }
