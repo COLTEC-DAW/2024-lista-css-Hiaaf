@@ -167,6 +167,7 @@ footer a {
   display: flex;
   flex-wrap: wrap;
   border-top: 2px solid lavender;
+  border-bottom: 2px solid lavender;
 }
 
 .participation h3 {
@@ -175,4 +176,30 @@ footer a {
 
 .participation * {
   flex-basis: 50%;
+}
+
+
+@media screen and (max-width: 768px) {
+  p {
+    text-indent: 0;
+  }
+
+  .design-selection {
+    position: static;
+  }
+
+  .explanation {
+    border: none;
+  }
+
+  .participation * {
+    flex-basis: 100%;
+  }
+}
+
+@media print {
+  * {
+    font-family: serif;
+    
+  }
 }
